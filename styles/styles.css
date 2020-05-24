@@ -347,7 +347,7 @@ h2 {
 	grid-row: 3 / span 1;
 	grid-column: 2;
 	height: auto;
-	width: 20em;
+	width: 75%;
 	padding-left: 40%;
 	padding-top: 1.25%;
 }
