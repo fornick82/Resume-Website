@@ -19,7 +19,6 @@ body {
 
 h1 {
 	font-size: 2em;
-	
 	text-underline-position: below;
 }
 img {
@@ -207,74 +206,6 @@ h2 {
 .photoGrid:hover:active {
 	filter: blur(3px)
 }
-/* Media query for iPad size 768px */
-@media screen and (max-width: 768px) {
-	.photos {
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: auto;
-	}
-	.indexGrid {
-		grid-template-columns: 100%;
-	}
-	.photoGrid1 {
-		grid-column: span 1;
-	}
-	.parallax1 {
-		background-attachment: scroll;
-	}
-	.parallax2 {
-		background-attachment: scroll;
-	}
-	.parallax3 {
-		background-attachment: scroll;
-	}
-	.parallax4 {
-		background-attachment: scroll;
-	}
-	.parallax5 {
-		background-attachment: scroll;
-	}
-	.parallax6 {
-		background-attachment: scroll;
-	}
-	.parallax7 {
-		background-attachment: scroll;
-	} 
-}
-/* Media query for phone size 450 */
-@media screen and (max-width: 500px) {
-	.photos {
-		grid-template-columns: 1fr;
-		grid-template-rows: auto;
-	}
-	.indexGrid {
-		grid-template-columns: 100%;
-	}
-	.photoGrid {
-		align-content: center;
-	}
-	.photoGrid1 {
-		grid-column: span 1;
-	}
-	.parallax2 {
-		background-attachment: scroll;
-	}
-	.parallax3 {
-		background-attachment: scroll;
-	}
-	.parallax4 {
-		background-attachment: scroll;
-	}
-	.parallax5 {
-		background-attachment: scroll;
-	}
-	.parallax6 {
-		background-attachment: scroll;
-	}
-	.parallax7 {
-		background-attachment: scroll;
-	}
-}
 /* Video Display Page */
 .videoPageTitle {
 	position: relative;
@@ -457,4 +388,71 @@ h2 {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+/* Media query for iPad size 768px */
+@media screen and (max-width: 768px) {
+	.photos {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto;
+	}
+	.indexGrid {
+		grid-template-columns: 100%;
+	}
+	.photoGrid1 {
+		grid-column: span 1;
+	}
+	.parallax1 {
+		background-attachment: scroll;
+	}
+	.parallax2 {
+		background-attachment: scroll;
+	}
+	.parallax3 {
+		background-attachment: scroll;
+	}
+	.parallax4 {
+		background-attachment: scroll;
+	}
+	.parallax5 {
+		background-attachment: scroll;
+	}
+	.parallax6 {
+		background-attachment: scroll;
+	}
+	.parallax7 {
+		background-attachment: scroll;
+	} 
+}
+/* Media query for phone size 450 */
+@media screen and (max-width: 500px) {
+	.photos {
+		display: flex;
+	}
+	.indexGrid {
+		grid-template-columns: 100%;
+	}
+	.photoGrid {
+		align-content: center;
+	}
+	.photoGrid1 {
+		grid-column: span 1;
+	}
+	.parallax2 {
+		background-attachment: scroll;
+	}
+	.parallax3 {
+		background-attachment: scroll;
+	}
+	.parallax4 {
+		background-attachment: scroll;
+	}
+	.parallax5 {
+		background-attachment: scroll;
+	}
+	.parallax6 {
+		background-attachment: scroll;
+	}
+	.parallax7 {
+		background-attachment: scroll;
+	}
 }
