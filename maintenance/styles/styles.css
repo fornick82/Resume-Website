@@ -1,0 +1,458 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Global Styles */
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 16px;
+	color: white;
+	background-color: #404552;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#page {
+	max-width: 1280px;
+	margin: 0 auto;
+	position: relative;
+}
+
+h1 {
+	font-size: 2em;
+	text-underline-position: below;
+}
+img {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: auto;
+}
+header {
+	/* Does Header (class banner) need to display block
+	for background color to work? */
+	background-color:#383c4a;
+	width: 100%;
+	height: 25%;
+	position:relative;
+}
+.logo {
+	width: 8%;
+	height: auto;
+	position:relative;
+	float:left;
+	margin: 1em;
+}
+.nameHeader {
+	position:relative;
+	float: left;
+	font-family: politica;
+	font-size: 3em;
+	margin: .5em .5em;
+	font-family: 'Cinzel', serif;
+}
+.navBar {
+	clear:both;
+	display:flex;
+	flex-direction: row;
+	justify-content: left;
+	background-color: #383c4a;
+	height: 50px;
+	padding-top: 15px;
+}
+.navHighlight:hover {
+	color: #3FA9F5;
+}
+li {
+	list-style-type: none;
+	text-decoration:none;
+	display:inline-block;
+	margin-right:2em;
+	padding-right: 2em;
+	border-right: 1px solid #5294E2;
+}
+li a {
+	text-decoration: none;
+}
+li a:hover {
+	color: #5294E2;
+}
+a {
+	color:white;
+}
+hr {
+	width: 60%;
+	height: .75px;
+	border: .75px solid #3FA9F5; 
+	/* alt blue #2aace2 */
+}
+.endLine {
+	clear: both;
+	width: 98%;
+	height: .75px;
+	border: .75px solid #3FA9F5;
+}
+/*
+a:visited; {
+	color: white;
+}
+*/
+.lastLink {
+	border-right: 0;
+}
+.cssGrid {
+	max-width: none;
+	display: grid;
+	grid-template-rows: 3fr 5fr;
+	grid-template-columns: auto;
+}
+.workDisplay {
+	max-width: none;
+	background-color: whitesmoke;
+	margin: 1em;
+	grid-column: 1/2;
+	padding: 0em 1em; 
+}
+h2 {
+	color:black;
+}
+.aboutMe {
+	grid-row: 1/2
+}
+.frontPageImg {
+	grid-row: 2/3
+}
+/* Index Page Slideshow */
+.indexGrid {
+	display: grid;
+	grid-template-columns: 40% 50%;
+	grid-template-rows: auto;
+	column-gap: 10px;
+	row-gap: none;
+	text-align: center;
+}
+.welcome {
+	display: grid;
+	justify-content: center;
+	grid-column: 1;
+	grid-row: 1;
+	margin-top: 3%;
+	margin-bottom: 2em;
+	border-bottom: 1px solid #3FA9F5;
+}
+.aboutMeIndex {
+	display: grid;
+	grid-column: 1;
+	grid-row: 2;
+	margin-left: 20%;
+	padding: 5%;
+	font-size: 1.25em;
+	/* border: 1px solid #3FA9F5; */
+}
+/* scale effect needs to be adjusted in relation to other page elements */
+/* .aboutMeIndex:hover {
+	transform: scale(1.2,1.2);
+} */
+.slideshow {
+	display: grid;
+	grid-column: 2;
+	grid-row: 2;
+	width: 40%;
+	height: auto;
+	margin: auto;
+}
+.carousel-inner {
+	margin: auto;
+}
+.carousel-caption {
+	background-color: rgba(0, 0, 0, .6);
+}
+.indexImg1 {
+	margin-top: 30%;
+}
+.indexImg2 {
+	margin-top: 30%;
+}
+/*photo page display */
+.photoPageTitle {
+	text-align: center;
+	margin-top: 1em; 
+	font-size: 3em;
+}
+.photos {
+	clear: both;	
+	display: grid;
+	grid-template-rows: repeat(3,1fr);
+	grid-template-columns: repeat(4,1fr);
+	grid-gap: 10px;
+	margin-left: 5em;
+	margin-right: 5em;
+	margin-top: 5em;
+}
+.photoGrid {
+	/* size: -2em; */
+	height: 250px;
+	width: auto;
+	/* position: center; */
+	grid-column: span 1;
+	margin:1.5em;
+	transition: width .5s, height .5s, transform .5s;
+    transition-delay: .2s;
+	transition-timing-function: ease-in;
+}
+.photoGrid:hover {
+	transform: scale(1.35,1.35);
+	box-shadow: 5px 5px 6px 8px #383c4a;
+}
+.photoGrid:hover:active {
+	filter: blur(3px)
+}
+/* Video Display Page */
+.videoPageTitle {
+	position: relative;
+	text-align: center;
+	margin-top: 10px; 
+	margin-bottom: 10px;
+	font-size: 3em;
+}
+.video {
+	position: relative;
+	padding-bottom: 56.25%;
+	max-width: 100%;
+	max-height: 100%;
+	padding-top: 4em;
+	padding-bottom: 4em;
+	padding-left: 36%;
+}
+.video iframe {
+	position: relative;
+	max-width: 100%;
+	max-height: 100%;
+	/* padding-left: 29%; */
+}
+.videoCaption {
+	position: relative;
+	font-size: 1em;
+	text-align: center;
+}
+
+/* carousel styles */
+.carousel-inner {
+	height: 600px;
+	width: 400px;
+}
+
+/* Contact Page */
+.headerContact {
+	position: relative;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 3em;
+}
+.contactGrid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.endBio {
+	display: grid;
+	grid-column: 1 / span 2;
+	font-size: 1.75em;
+	margin-left: 10%;
+	margin-right: 40;
+}
+.contact {
+	display: grid;
+	grid-column: 2 / span 1;
+	grid-row: 2 / span 1;
+	font-size: 1.25em;
+	margin-top: 5%;
+	margin-left: 15%;
+}
+.contact.hover {
+	text-decoration: none;
+}
+.myImage {
+	display: grid;
+	grid-row: 3 / span 1;
+	grid-column: 2;
+	height: auto;
+	width: 75%;
+	padding-left: 40%;
+	padding-top: 1.25%;
+}
+.resumeHeader {
+	display: grid;
+	grid-column: 1 / span 1;
+	grid-row: 2 / span 1;
+	text-decoration: none;
+	font-size: 1.25em;
+	color: white;
+	margin-left: 20%;
+	margin-top: 5%;
+}
+.resumeDownload:hover {
+	text-decoration: none;
+	color: #3FA9F5;
+}
+.resumeImg {
+	display: grid;
+	grid-row: 3 / span 1;
+	grid-column: 1;
+	width: auto;
+	height: auto;
+}
+/* .pdfViewer:hover {
+	height: 70em;
+	width: auto;
+	margin-left: ;
+} */
+/* Design Page Styles */
+.designIntro {
+	margin-top: 5%;
+	margin-bottom: 20%;
+	font-size: 3em;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.designDisplay {
+	margin-top: 5%;
+}
+.designText {
+	height: 400px;
+	font-size: 2em;
+	background-color: #404552;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.designTextEnd {
+	height: 1000px;
+	font-size: 2em;
+	background-color: #404552;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.parallax1 {
+	background-image: url(/assets/NewspaperFrontPage.png);
+	min-height: 970px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 95%;
+}
+.parallax2 {
+	background-image: url(/assets/WaterSponsor.png);
+	min-height: 970px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.parallax3 {
+	background-image: url(/assets/WaterGraphic.png);
+	min-height: 970px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.parallax4 {
+	background-image: url(/assets/BrackePar.png);
+	min-height: 970px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.parallax5 {
+	background-image: url(/assets/MediaGuidePar.png);
+	min-height: 970px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.parallax6 {
+	background-image: url(/assets/RickSongChart.png);
+	min-height: 970px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.parallax7 {
+	background-image: url(/assets/EmmysPagePar.png);
+	min-height: 970px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* Media query for iPad size 768px */
+@media screen and (max-width: 768px) {
+	.photos {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto;
+	}
+	.indexGrid {
+		grid-template-columns: 100%;
+	}
+	.photoGrid1 {
+		grid-column: span 1;
+	}
+	.parallax1 {
+		background-attachment: scroll;
+	}
+	.parallax2 {
+		background-attachment: scroll;
+	}
+	.parallax3 {
+		background-attachment: scroll;
+	}
+	.parallax4 {
+		background-attachment: scroll;
+	}
+	.parallax5 {
+		background-attachment: scroll;
+	}
+	.parallax6 {
+		background-attachment: scroll;
+	}
+	.parallax7 {
+		background-attachment: scroll;
+	} 
+}
+/* Media query for phone size 450 */
+@media screen and (max-width: 500px) {
+	.photos {
+		display: flex;
+	}
+	.indexGrid {
+		grid-template-columns: 100%;
+	}
+	.photoGrid {
+		align-content: center;
+	}
+	.photoGrid1 {
+		grid-column: span 1;
+	}
+	.parallax2 {
+		background-attachment: scroll;
+	}
+	.parallax3 {
+		background-attachment: scroll;
+	}
+	.parallax4 {
+		background-attachment: scroll;
+	}
+	.parallax5 {
+		background-attachment: scroll;
+	}
+	.parallax6 {
+		background-attachment: scroll;
+	}
+	.parallax7 {
+		background-attachment: scroll;
+	}
+}
